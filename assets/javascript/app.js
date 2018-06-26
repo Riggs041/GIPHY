@@ -21,8 +21,6 @@ $(document).ready(function () {
             $("#television-view").append(a);
 
         }
-        
-        s = $("#tv-input").focus();
 
     }
 
