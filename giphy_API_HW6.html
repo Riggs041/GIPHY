@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GIPHY HW6</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="Users\riggs\codingBootcamp\homework\GIPHY\HW6.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets\css\style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </head>
+
 <body>
-    <h1>Sitcom's</h1>
     <!-- Create an array of strings, each one related to a topic. Topic: Sitcoms -->
-    
+
     <!-- Save to a variable called "topics" -->
 
     <!-- Topics in array should create buttons. Use loop that appends buttons -->
@@ -23,7 +25,32 @@
     <!-- Under each gif, display ratings -->
 
     <!-- add form that takes value and adds to the "topics array" and adds a new button to the page -->
+    <div class="container">
+
+        <div class="header">
+            <h1>GIF your favorite TV show!</h1>
+        </div>
+
+        <div id="television-view">
+
+        </div>
+
+        <form id="tv-form">
+            <label for="tv-input">Add another show</label>
+            <input type="text" id="tv-input">
+
+
+            <input id="add-tv" type="submit" value="Submit">
+        </form>
+
+        <div id="GIFs"> </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets\javascript\app.js"></script>
 
 
 </body>
+
 </html>
