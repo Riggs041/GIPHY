@@ -12,7 +12,6 @@ $(document).ready(function () {
 
             var a = $('<button>');
 
-            //maybe delete? look up addClass
             a.addClass('tv');
 
             a.attr('data-name', television[i]);
@@ -22,7 +21,7 @@ $(document).ready(function () {
             $("#television-view").append(a);
 
         }
-        //look to delete? 
+        
         s = $("#tv-input").focus();
 
     }
@@ -92,14 +91,14 @@ $(document).ready(function () {
     $(document).on('click', '.showImage', function () {
 
         var state = $(this).data('state');
-        //If the clicked image's state is still, update its src attribute to what its data-animate value is
+        
         if (state == "still") {
             console.log("still image works");
-            // Then, set the image's data-state to animate
+            
             $(this).attr('src', $(this).data('animate'))
                 .data('state', 'animate');
         } else {
-            //  else set src to the data-still value
+            
             console.log("animated image works");
             $(this).attr('src', $(this).data('still'))
                 .data('state', 'still');
